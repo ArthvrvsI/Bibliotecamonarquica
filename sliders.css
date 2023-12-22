@@ -1,0 +1,131 @@
+section.slider{
+    margin: 118px auto;
+    width: 71% ;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+    margin-left: 280px;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+.slider-content{
+    width: 327%;
+    height: auto;
+    display: flex;
+    position: relative;
+    margin: 10px;
+    justify-content: center;
+    transition: transform 1s; 
+    scroll-behavior: smooth;
+}
+
+.slide-box a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    }
+
+.slide-box img {
+    max-width: 600%; 
+    max-height: 600%; 
+    border-style: solid;
+    border-color: black;
+}
+
+.slider-content input{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: 1s; 
+    margin-left: 0px;
+}
+
+.slide-boxprimeiro {
+    width: 20%; 
+    height: auto;
+    position: relative;
+    transition: 1s;
+}
+
+slide-boxprimeiro img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-manual .manualbtn, .nav-auto div{
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.2ss;
+}
+
+.nav-manual .manualbtn:not(:last-child), .nav-auto div:no(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manualbtn:hover{
+    background-color:purple;
+}
+
+#radio1:checked ~ .nav-auto .manualbtn{
+    background-color: purple;
+}
+
+#radio2:checked ~ .nav-auto .manualbtn{
+    background-color: purple;
+}
+
+#radio3:checked ~ .nav-auto .manualbtn{
+    background-color: purple;
+}
+
+#radio4:checked ~ .nav-auto .manualbtn{
+    background-color: purple;
+}
+
+#radio1:checked ~ .slide-box{
+    transform: translateX(0);
+}
+
+#radio2:checked ~ .slide-box{
+    transform: translateX(-100%);
+}
+
+#radio3:checked ~ .slide-box{
+    transform: translateX(-200%);
+}
+
+#radio4:checked ~ .slide-box{
+    transform: translateX(-300%);
+}

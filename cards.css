@@ -1,0 +1,280 @@
+
+
+body {
+    margin: 0;
+    color: #FFF;
+    column-count: 2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+
+}
+
+.card {    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#333,#333);
+}
+
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./imagens/Brasão_de_Armas_Império_do_Brasil.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: 100;
+}
+
+.card .img2 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./imagens/Brasão_do_Reino_de_Portugal.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: 100;
+}
+
+.card .img3 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./imagens/Coat_of_Arms_of_Spain.svg.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: 100;
+}
+
+.card .img4 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./imagens/Logo_RN-CRAF_2019.svg.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: 100;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    transition: all .5s;
+}
+
+.card .img2 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    transition: all .5s;
+}
+
+.card .img3 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    transition: all .5s;
+}
+
+.card .img4 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card .content a span{
+    color: white;
+}
+
+.card.content a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.card .content a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+/*Header*/
+
+body{
+
+    display: flex;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: scroll;
+
+}
+
+.barra{
+    height: 50px;
+}
+
+img{
+    height: 250px;
+    align-items: center; 
+    align-content: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid black;
+}
+
+h1{
+    margin-top: 0;
+    padding: 0;
+    height: auto;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    align-items: start;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+.center-text {
+    justify-content: center;
+    margin-top: 250px;
+    margin-right: auto;
+    margin: 450px 0px;
+}
